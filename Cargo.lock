@@ -295,16 +295,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "rs_playground"
-version = "0.1.0"
-dependencies = [
- "clap",
- "serde",
- "serde_bytes",
- "tokio",
-]
-
-[[package]]
 name = "rustc-demangle"
 version = "0.1.23"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -422,6 +412,16 @@ name = "unicode-ident"
 version = "1.0.12"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3354b9ac3fae1ff6755cb6db53683adb661634f67557942dea4facebec0fee4b"
+
+[[package]]
+name = "us_example"
+version = "0.1.0"
+dependencies = [
+ "clap",
+ "serde",
+ "serde_bytes",
+ "tokio",
+]
 
 [[package]]
 name = "utf8parse"

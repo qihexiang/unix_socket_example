@@ -17,9 +17,18 @@ struct Cli {
 
 #[derive(Subcommand, Debug)]
 enum SubPrograms {
+    /// start a daemon listen on /tmp/example.socket
     Server {},
-    Send { send: String },
-    SendFile { file: String },
+    /// send some message to /tmp/example.socket
+    Send { 
+        /// message in UTF-8 encoded
+        send: String 
+    },
+    /// read a text file and send to /tmp/example.socket
+    SendFile { 
+        /// path of the file
+        file: String 
+    },
 }
 
 #[tokio::main]
